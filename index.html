@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ Web Design Agency | Premium Web Design & Client Acquisition</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+
+    <!-- Ambient Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">CJ WEB DESIGN.</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#work">Case Studies</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact" class="btn-primary sm">Let's Talk</a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Overlay Mobile Menu -->
+    <div id="overlay-menu" class="overlay-menu">
+        <div class="overlay-bg"></div>
+        <nav class="overlay-nav">
+            <ul>
+                <li class="menu-item"><a href="#services">01 / Services</a></li>
+                <li class="menu-item"><a href="#process">02 / Our Process</a></li>
+                <li class="menu-item"><a href="#work">03 / Case Studies</a></li>
+                <li class="menu-item"><a href="#testimonials">04 / Reviews</a></li>
+                <li class="menu-item"><a href="#contact">05 / Contact</a></li>
+            </ul>
+        </nav>
+        <div class="overlay-contact">
+            <p>cj.webdesignagency@gmail.com</p>
+            <p>832-543-3040</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <header id="hero" class="hero-section">
+            <div class="hero-content reveal slide-up">
+                <div class="badge">Built For Home Service Businesses</div>
+                <h1 class="elegant-title">We Build Lead Generation <br><span class="accent-text glow-text">Machines.</span></h1>
+                <p>Top-tier web design paired with powerful CRM automations. We turn your online presence into an engine that books jobs while you sleep.</p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn-primary">View Case Studies</a>
+                    <a href="#services" class="btn-outline">Our Expertise</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Infinite Marquee -->
+        <div class="marquee-container">
+            <div class="marquee-content">
+                WEB DESIGN • GOHIGHLEVEL AUTOMATIONS • LEAD GENERATION • CONVERSION OPTIMIZATION • BRAND STRATEGY • 
+                WEB DESIGN • GOHIGHLEVEL AUTOMATIONS • LEAD GENERATION • CONVERSION OPTIMIZATION • BRAND STRATEGY • 
+            </div>
+        </div>
+
+        <!-- Services Section (Bento Grid) -->
+        <section id="services" class="services-section">
+            <div class="section-header reveal fade-in">
+                <h2>Our <span class="accent-text">Expertise</span></h2>
+                <p>We do more than design; we build scalable acquisition systems.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Bento Large Main (Spans 2 columns on desktop) -->
+                <article class="bento-card bento-large reveal slide-up delay-1 glass-panel">
+                    <div class="bento-content">
+                        <h3>High-End Web Design</h3>
+                        <p>Beautiful, lightning-fast websites engineered to build trust and convert local traffic into paying clients immediately. We don't just build online brochures—we build high-performance lead-generation hubs optimized for both Google search ranking and mobile conversion. When a customer lands on your page, they will know instantly that you are the most premium, reliable contractor in your city.</p>
+                        <ul class="bento-features" style="grid-template-columns: 1fr 1fr;">
+                            <li>Conversion-Optimized Landing Pages</li>
+                            <li>Lightning-Fast Mobile Architecture</li>
+                            <li>Google Maps & SEO Integration</li>
+                            <li>Premium Branding & UX/UI</li>
+                        </ul>
+                    </div>
+                    <div class="bento-image">
+                        <img src="images/bento_web_design.png" alt="High-End Web Design Abstract">
+                    </div>
+                </article>
+
+                <!-- Bento Secondary 1 -->
+                <article class="bento-card reveal slide-up delay-2 glass-panel">
+                    <div class="bento-content">
+                        <h3>Automated Follow-ups</h3>
+                        <p>Never lose a lead again just because you were busy on a job site. Our Twilio-powered instant SMS and AI chat systems follow up with prospects the second they submit a form, automatically booking appointments directly onto your calendar without you lifting a finger.</p>
+                        <ul class="bento-features">
+                            <li>Instant 5-Minute "Speed to Lead" SMS</li>
+                            <li>24/7 AI Chatbot Responders</li>
+                            <li>Automated Calendar Booking</li>
+                        </ul>
+                    </div>
+                    <div class="bento-image">
+                        <img src="images/bento_automations.png" alt="Automation Abstract">
+                    </div>
+                </article>
+
+                <!-- Bento Secondary 2 -->
+                <article class="bento-card reveal slide-up delay-3 glass-panel">
+                    <div class="bento-content">
+                        <h3>CRM Integration</h3>
+                        <p>We build out fully functional, customized GoHighLevel environments so you can track where every single prospect is located in your sales pipeline. Effortlessly manage reviews, invoices, and follow-up sequences from one central, easy-to-use dashboard.</p>
+                        <ul class="bento-features">
+                            <li>Complete GoHighLevel Setup</li>
+                            <li>Automated Google Review Requests</li>
+                            <li>Centralized Sales Pipeline</li>
+                        </ul>
+                    </div>
+                    <div class="bento-image">
+                        <img src="images/bento_crm.png" alt="CRM Abstract">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Process Section (Sticky Scroll) -->
+        <section id="process" class="process-section">
+            <div class="process-container">
+                <div class="process-sticky-header reveal fade-in">
+                    <h2>How We <br><span class="accent-text">Execute</span></h2>
+                    <p>A proven blueprint for digital dominance.</p>
+                    
+                    <div class="trust-badges">
+                        <div class="badge-item">
+                            <span class="badge-icon">★</span>
+                            <span class="badge-text">Top Rated Agency 2026</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">✓</span>
+                            <span class="badge-text">Certified CRM Partners</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-icon">↗</span>
+                            <span class="badge-text">100+ Successful Deliveries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-steps">
+                    <article class="process-step-editorial reveal slide-up">
+                        <div class="step-num-bg">01</div>
+                        <div class="step-content">
+                            <h3>Discovery & Strategy</h3>
+                            <p>We analyze your target market, local competitors, and current bottlenecks to craft a bespoke digital strategy.</p>
+                        </div>
+                    </article>
+                    <article class="process-step-editorial reveal slide-up">
+                        <div class="step-num-bg">02</div>
+                        <div class="step-content">
+                            <h3>Design & Architecture</h3>
+                            <p>We build a premium, mobile-optimized site while perfectly laying out the automation logic in the background.</p>
+                        </div>
+                    </article>
+                    <article class="process-step-editorial reveal slide-up">
+                        <div class="step-num-bg">03</div>
+                        <div class="step-content">
+                            <h3>Launch & Scale</h3>
+                            <p>We deploy the machine, hook up your CRM and lead routing, and train you on how to handle the new influx of qualified jobs.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work Section / Case Studies -->
+        <section id="work" class="work-section">
+            <div class="section-header reveal fade-in">
+                <h2>Impact <span class="accent-text">Case Studies</span></h2>
+                <p>Real results for real home service businesses.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Case Study 1 -->
+                <div class="portfolio-item reveal slide-up glass-panel-lg">
+                    <div class="portfolio-image">
+                        <img src="images/roofing_mockup_1775603502862.png" alt="Vertex Roofing Case Study">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">Read Full Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Vertex Roofing</h3>
+                        <p>Complete Digital Overhaul & SEO Strategy</p>
+                        <div class="metrics-box">
+                            <div class="metric">
+                                <span>+125%</span>
+                                <span>Organic Reach</span>
+                            </div>
+                            <div class="metric">
+                                <span>4.5x</span>
+                                <span>Lead Volume</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="portfolio-item reveal slide-up delay-1 glass-panel-lg">
+                    <div class="portfolio-image">
+                        <img src="images/plumbing_mockup_1775603518562.png" alt="Hydro-Flow Plumbing">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">Read Full Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Hydro-Flow Plumbing</h3>
+                        <p>Web Design & Automated Dispatch CRM</p>
+                        <div class="metrics-box">
+                            <div class="metric">
+                                <span>-40%</span>
+                                <span>Missed Calls</span>
+                            </div>
+                            <div class="metric">
+                                <span>+85%</span>
+                                <span>Conversion Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="portfolio-item reveal slide-up delay-2 glass-panel-lg">
+                    <div class="portfolio-image">
+                        <img src="images/welding_mockup_1775603554600.png" alt="Forge & Arc Welding">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">Read Full Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Forge & Arc Welding</h3>
+                        <p>Industrial Hub & Lead Qualification Funnel</p>
+                        <div class="metrics-box">
+                            <div class="metric">
+                                <span>100%</span>
+                                <span>CRM Adoption</span>
+                            </div>
+                            <div class="metric">
+                                <span>+2.5x</span>
+                                <span>Faster Follow-up</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 4 -->
+                <div class="portfolio-item reveal slide-up delay-3 glass-panel-lg">
+                    <div class="portfolio-image">
+                        <img src="images/landscaping_mockup_1775603536044.png" alt="Verdiant Luxe Landscaping">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn-view">Read Full Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Verdiant Luxe</h3>
+                        <p>High-End Estate Landscaping Showcase</p>
+                        <div class="metrics-box">
+                            <div class="metric">
+                                <span>+160%</span>
+                                <span>Site Traffic</span>
+                            </div>
+                            <div class="metric">
+                                <span>Top 3</span>
+                                <span>Local Visibility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials / Social Proof Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-header reveal fade-in">
+                <h2>Client <span class="accent-text">Testimonials</span></h2>
+                <p>Don't just take our word for it.</p>
+            </div>
+            
+            <div class="bento-testimonial-grid reveal slide-up">
+                
+                <!-- Focus Metric Card (Anchor) -->
+                <article class="bento-card bento-featured">
+                    <div class="bento-featured-content">
+                        <div class="bento-metric-wrapper">
+                            <h2 class="bento-metric-value">4.5x</h2>
+                            <span class="bento-metric-label">Lead Volume Increased</span>
+                        </div>
+                        <p class="testimonial-body">"We were relying entirely on HomeAdvisor and paying for shared leads. CJ built an infrastructure that bypasses those brokers entirely. We went from scraping by on generic leads to booking massive custom jobs. Now we own our local traffic."</p>
+                        
+                        <div class="card-footer">
+                            <div class="client-initials">MP</div>
+                            <div class="client-meta-info">
+                                <strong>Mike Peterson</strong>
+                                <span>Owner, Hydro-Flow Plumbing</span>
+                            </div>
+                            <div class="verified-badge">✓ Verified ROI</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Support Side Card 1 -->
+                <article class="bento-card bento-secondary">
+                    <div class="card-header">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-body">"I didn't think a website could actually dispatch our crews. They integrated a CRM that texts customers back before I even check my phone. Absolute game changer."</p>
+                    <div class="card-footer bento-footer-mini">
+                        <div class="client-initials">SD</div>
+                        <div class="client-meta-info">
+                            <strong>Sarah Daniels</strong>
+                            <span>CEO, Vertex Roofing</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Support Side Card 2 -->
+                <article class="bento-card bento-secondary">
+                    <div class="card-header">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <p class="testimonial-body">"We're booking multi-six-figure industrial jobs directly from Google now. The premium branding perfectly positioned us for heavy commercial work."</p>
+                    <div class="card-footer bento-footer-mini">
+                        <div class="client-initials">MV</div>
+                        <div class="client-meta-info">
+                            <strong>Marcus Vance</strong>
+                            <span>Founder, Forge & Arc</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section reveal fade-in">
+            <div class="contact-box glass-panel-lg">
+                <h2>Ready to <span class="accent-text glow-text">Dominate?</span></h2>
+                <p>Let's build a digital presence that leaves your competitors behind.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea placeholder="Tell us about your business and goals" rows="4" required></textarea>
+                    <button type="submit" class="btn-primary full-width">Get Your Free Strategy Plan</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="logo glow-text">CJ WEB DESIGN.</h3>
+                <p>Engineered For Growth.</p>
+            </div>
+            <div class="footer-nav">
+                <a href="#services">Services</a>
+                <a href="#process">Process</a>
+                <a href="#work">Case Studies</a>
+                <a href="#testimonials">Reviews</a>
+            </div>
+            <div class="footer-social">
+                <span>© 2026 CJ Web Design Agency. Validated for high performance.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/* Marquee Animation */
+.marquee-container {
+    padding: 1rem 0;
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    white-space: nowrap;
+    display: flex;
+}
+
+.marquee-content {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: var(--accent-cyan);
+    animation: marquee_scroll 20s linear infinite;
+    display: inline-block;
+}
+
+@keyframes marquee_scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Background Blobs Float Animation */
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Scroll Revelations */
+.reveal {
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+/* Specific reveal types */
+.fade-in {
+    transform: translateY(0);
+}
+
+.slide-up {
+    transform: translateY(50px);
+}
+
+.slide-up.active {
+    transform: translateY(0);
+}
+
+/* Delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none; /* Show on mobile */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: var(--text-primary);
+    transition: all 0.3s ease;
+    left: 0;
+}
+
+.line-1 { top: 0; }
+.line-2 { bottom: 0; }
+
+.menu-toggle.active .line-1 {
+    transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.active .line-2 {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Overlay Menu Animation */
+.overlay-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.overlay-menu.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.overlay-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(8, 8, 12, 0.95);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+}
+
+.overlay-nav ul {
+    list-style: none;
+}
+
+.menu-item {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.menu-item a {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    transform: translateY(100%);
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.overlay-menu.active .menu-item a {
+    transform: translateY(0);
+}
+
+.menu-item:nth-child(1) a { transition-delay: 0.1s; }
+.menu-item:nth-child(2) a { transition-delay: 0.2s; }
+.menu-item:nth-child(3) a { transition-delay: 0.3s; }
+.menu-item:nth-child(4) a { transition-delay: 0.4s; }
+
+.overlay-contact {
+    margin-top: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease 0.5s;
+}
+
+.overlay-menu.active .overlay-contact {
+    opacity: 1;
+    transform: translateY(0);
+}
